@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :companies
-  root 'company#index'
+  root 'home_page#home'
 
 end
-#  Prefix Verb   URI Pattern                    Controller#Action
+# Prefix Verb   URI Pattern                    Controller#Action
 #         new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
 #             user_session POST   /users/sign_in(.:format)       devise/sessions#create
 #     destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
@@ -20,4 +20,12 @@ end
 #                          PATCH  /users(.:format)               devise/registrations#update
 #                          PUT    /users(.:format)               devise/registrations#update
 #                          DELETE /users(.:format)               devise/registrations#destroy
-#                     root GET    /                              company#index
+#                companies GET    /companies(.:format)           companies#index
+#                          POST   /companies(.:format)           companies#create
+#              new_company GET    /companies/new(.:format)       companies#new
+#             edit_company GET    /companies/:id/edit(.:format)  companies#edit
+#                  company GET    /companies/:id(.:format)       companies#show
+#                          PATCH  /companies/:id(.:format)       companies#update
+#                          PUT    /companies/:id(.:format)       companies#update
+#                          DELETE /companies/:id(.:format)       companies#destroy
+#                     root GET    /                              home_page#home

@@ -156,10 +156,13 @@ a:focus {
 
     .brand-heading {
         font-size: 100px;
+        color:rgb(238, 238, 238);
+        margin-top: 42px;
     }
 
     .intro-text {
         font-size: 25px;
+        color: rgb(255, 166, 166);
     }
 }
 
@@ -244,8 +247,8 @@ a:focus {
 .download-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    color: #AD9D9D;
+    background: url(http://3.bp.blogspot.com/--XCNhqTFTuo/Uf9rU0qCmZI/AAAAAAAABYc/OEF-_RjV_Ug/s1600/happyjob.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;

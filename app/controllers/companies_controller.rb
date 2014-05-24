@@ -3,7 +3,7 @@ class CompaniesController < ApplicationController
 		@companies = Company.all
 	 end
 	 def create
-	 	@companies = Company.new(params[:id])
+	 	@company = Company.new(params[:id])
 	 end
 	 def show
 	 	@compaies = Company.all

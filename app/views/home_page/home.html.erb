@@ -1,47 +1,4 @@
-   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                    <i class="fa fa-play-circle"></i> 
-                    <br>
-                     <span class="light"> Judgement Day</span> 
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <% if user_signed_in? %>
-                    <li class="page-scroll"><a class="active"> <%= link_to "Sign out", destroy_user_session_path, :method => :delete %></a></li>
-                    <li class="page-scroll">
-                        <a href="#contact">About us</a>
-                    </li>
-                     <% else %>    
-                    <li class="page-scroll">
-                        <a href="/users/sign_in">Sign in</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/users/sign_up">Sign up</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">About us</a>
-                    </li>
-        
-                    <% end %>
-                </ul>
-
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+   
 
     <section class="intro">
         <div class="intro-body">
@@ -87,14 +44,14 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Us at Judgement Day</h2>
-                <p>Feel free to email us to provide some feedback to us here at Judgementday, we love  suggestions to help make us one kickass site, or to just say hello!</p>
+                <p>Feel free to email us to provide feedback about Judgement day, we love  suggestions to help make us one kickass site, or to just say hello!</p>
                 <p>feedback@judgementday.com</p>
                 <ul class="list-inline banner-social-buttons">
-                    <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Poop</span></a>
+                    <li><a href="https://twitter.com/"target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                     </li>
-                    <li><a href="https://github.com/cmcilhenny/brickHouse/tree/boodstrap_test" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    <li><a href="https://github.com/cmcilhenny/brickHouse/tree/boodstrap_test"target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
-                    <li><a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    <li><a href="https://trello.com/b/KqYhUZAD/mvp"target="_blank" class="btn btn-default btn-lg"><i class="fa fa-trello fa-fw"></i> <span class="network-name">Trello</span></a>
                     </li>
                 </ul>
             </div>

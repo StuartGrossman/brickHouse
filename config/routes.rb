@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :companies
+  resources :layouts
+  get 'about' => 'companies#about'
   root 'home_page#home'
 
 end

@@ -46,7 +46,13 @@
                     <li class="page-scroll">
                         <a href="/about">About us</a>
                     </li>
-                    <li class="page-scroll"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+                    
+                    <li class="page-scroll"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+                    </li>
+
+                     <li class="page-scroll">
+                        <input id="searchCompany"type="text" placeholder="Company" >
+                    </li>
                     
                      <% else %>    
                     <li class="page-scroll">
@@ -57,6 +63,10 @@
                     </li>
                     <li class="page-scroll">
                         <a href="/about">About us</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <input id="searchCompany"type="text" placeholder="Company" >
                     </li>
         
                     <% end %>

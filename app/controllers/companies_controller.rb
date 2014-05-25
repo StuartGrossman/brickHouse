@@ -15,6 +15,9 @@ class CompaniesController < ApplicationController
 	 	f.json { render :json => @companies }
 	 	end
 	 end
+	 def search
+		@companies.all.title	 	
+	 end
 	 def destory
 	 end
 	private
